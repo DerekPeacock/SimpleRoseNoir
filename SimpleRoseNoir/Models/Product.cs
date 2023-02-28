@@ -14,5 +14,9 @@ namespace SimpleRoseNoir.Models
 
         [DataType(DataType.Currency)]
         public decimal Price { get; set; } = 0;
+
+        // Navigation Property
+
+        public virtual ICollection<Variation> Variations { get; set; }
     }
 }
