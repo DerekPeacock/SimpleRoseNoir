@@ -85,6 +85,13 @@ namespace SimpleRoseNoir.Data
                     Price = 0
                 }
             };
+
+            foreach (var variation in variations)
+            {
+                context.Variations.Add(variation);
+            }
+
+            context.SaveChanges();
         }
     }
 }
