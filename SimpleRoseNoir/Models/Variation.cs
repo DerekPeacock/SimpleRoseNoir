@@ -6,6 +6,8 @@ namespace SimpleRoseNoir.Models
     {
         public int VariationId { get; set; }
 
+        public int ProductId { get; set; }
+
         [Required, StringLength(120)]
         public string Name { get; set; } = String.Empty;
 
@@ -17,6 +19,10 @@ namespace SimpleRoseNoir.Models
         public decimal Price { get; set; } = 0;
 
         public string Colour { get; set; }= String.Empty;
+
+        // Navigation Property
+
+        public virtual Product Product { get; set; }
 
     }
 }
