@@ -6,6 +6,8 @@ namespace SimpleRoseNoir.Data
     {
         public static void SeedData(ApplicationDbContext context)
         {
+            context.Database.EnsureCreated();
+
             AddProducts(context);
             AddVariations(context);
         }
