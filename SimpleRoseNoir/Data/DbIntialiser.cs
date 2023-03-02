@@ -52,6 +52,7 @@ namespace SimpleRoseNoir.Data
             {
                 new Variation()
                 {
+                    ProductId = 1,
                     Name = "Yellow Product 1",
                     Description = "Yellow Product 1 Description",
                     Colour ="Yellow",
@@ -59,8 +60,25 @@ namespace SimpleRoseNoir.Data
                 },
                 new Variation()
                 {
+                    ProductId = 1,
                     Name = "Blue Product 1",
                     Description = "Blue Product 1 Description",
+                    Colour ="Blue",
+                    Price = 0
+                },
+               new Variation()
+                {
+                    ProductId = 2,
+                    Name = "Yellow Product 2",
+                    Description = "Yellow Product 2 Description",
+                    Colour ="Yellow",
+                    Price = 0
+                },
+                new Variation()
+                {
+                    ProductId = 2,
+                    Name = "Blue Product 2",
+                    Description = "Blue Product 2 Description",
                     Colour ="Blue",
                     Price = 0
                 }
